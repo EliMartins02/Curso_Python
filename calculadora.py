@@ -43,4 +43,21 @@ while executar :
 
 #Multiplicação
 
+
+
+
+
+
+
+
+
+
+
+
 #sair
+if operador == "5" or operador == "Sair":
+   print("Obrigado!")
+   executar = False
+
+
+
