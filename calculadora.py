@@ -40,19 +40,22 @@ while executar :
 
 
 #Divisão
+  if operador == "3" or operador == "Dividir" or operador == "/":
+    resultado = valor01 / valor02
+    print("Resultado da divisão: " + str(resultado))
+    print(texto_sair)
+    operador = input("Deseja realizar outro calculo?")
+    if operador == "1":
+          executar = False 
 
 #Multiplicação
-
-
-
-
-
-
-
-
-
-
-
+  if operador == "4" or operador == "Multiplicar" or operador == "*":
+    resultado = valor01 * valor02
+    print("Resultado da multiplicação: " + str(resultado))
+    print(texto_sair)
+    operador = input("Deseja realizar outro calculo?")
+    if operador == "1":
+          executar = False 
 
 #sair
 if operador == "5" or operador == "Sair":
