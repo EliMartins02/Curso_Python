@@ -14,6 +14,16 @@ class CalculadoraIR():
         self. tabela_ir = tabela_ir
 
     def calcular(self):
-        impsoto = 0
-        for faixa in self. tabela_ir.tabela
+        imposto = 0
+        for faixa in self. tabela_ir.tabela:
+         if self.salario_bruto > faixa ["faixa"][0] and self.salario_bruto <= faixa ["faixa"][1]:
+             imposto = (self.salario_bruto * faixa["aliquota"]) / 100 - faixa["deducao"]
+             break # é usado para parar o loop assim que a faixa é encontrada e o imposto é calculado.
+        return imposto 
+        
+tabela_ir= TabelaIR()
+salario_bruto= float(input("Informe seu salario: ")) # essa info sempre sai str
+calculadora= CalculadoraIR(salario_bruto, tabela_ir)
+resultado= calculadora.calcular()
+print(f'O imposto de renda devido é de R$ {resultado:.2f}')
           
